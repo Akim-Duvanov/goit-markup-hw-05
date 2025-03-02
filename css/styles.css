@@ -673,7 +673,7 @@ textarea {
 
 .subscribe-button {
     display: flex;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     gap: 16px;
     padding: 8px 24px 8px 24px;
