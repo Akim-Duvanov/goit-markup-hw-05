@@ -608,7 +608,7 @@ textarea {
 }
 
 .privacy-container {
-    margin-bottom: 24px;
+    margin: 24px 0;
     align-items: center;
 }
 
@@ -632,12 +632,18 @@ textarea {
     border: 1px solid rgba(46, 47, 66, 0.4);
     position: relative;
     background-color: transparent;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .privacy-container .form-input[type="checkbox"]:checked + .form-label .privacy-icon-box {
     background-color: #404bbf;
-    border: 1px solid #404bbf;
+    border: none;
+}
+
+.privacy-container .form-input[type="checkbox"]:checked+.form-label .privacy-icon-box .icon{
+    fill: #fff;
 }
 
 .privacy-icon-box .icon{
@@ -645,7 +651,8 @@ textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    fill: #fff;
+    fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .input-box {
@@ -662,10 +669,6 @@ textarea {
 .form-element.form-textarea {
     margin-bottom: 16px;
     height: 120px;
-}
-
-.form-button {
-    margin-top: 24px;
 }
 
 /* footer after form*/
