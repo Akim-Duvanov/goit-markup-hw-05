@@ -667,6 +667,10 @@ textarea {
     margin-bottom: 8px;
 }
 
+.modal-form .form-button {
+    margin-top: 0px;
+}
+
 .form-element.form-textarea {
     margin-bottom: 16px;
     height: 120px;
@@ -678,13 +682,14 @@ textarea {
     margin-right: 80px;
 }
 
-.subscribe-form .input-box {
+.subscribe-form .form-input{
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
     height: 40px;
     padding-left: 16px;
     display: inline-flex;
+    color:#ffffff;
 }
 
 .subscribe-form .input-box::placeholder {
@@ -692,7 +697,7 @@ textarea {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;;
 }
 
 .subscribe-form {
@@ -704,12 +709,14 @@ textarea {
     display: flex;
     min-width: 165px;
     height: 40px;
-    gap: 16px;
     padding: 8px 24px 8px 24px;
     margin-top: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .subscribe-button .icon {
     fill: #fff;
     align-self: center;
+    margin-left: 16px;
 }
