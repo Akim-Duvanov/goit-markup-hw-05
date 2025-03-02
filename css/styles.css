@@ -455,6 +455,14 @@ header {
 
 /* form */
 
+input,
+textarea {
+    outline: transparent;
+    border: transparent;
+    background-color: transparent;
+    width: 100%;
+}
+
 textarea {
     resize: none;
 }
@@ -583,7 +591,6 @@ textarea {
     pointer-events: auto;
 }
 
-.form-label,
 .input-box,
 .privacy-container {
     display: flex;
@@ -591,6 +598,7 @@ textarea {
 
 .privacy-container {
     margin-top: 8px;
+    align-items: center;
 }
 
 .form-input.input-box {
@@ -599,11 +607,12 @@ textarea {
 }
 
 .privacy-icon-box {
-    display: inline;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 16px;
     height: 16px;
+    margin-right: 8px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     position: relative;
@@ -631,32 +640,22 @@ textarea {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-label {
-    flex-direction: column;
-}
-
-input,
-textarea {
-    outline: transparent;
-    border: transparent;
-    background-color: transparent;
-    width: 100%;
-}
-
 .form-button {
     margin-top: 24px;
 }
 
 /* footer after form*/
+
 .footer .icon-box {
     margin-right: 80px;
 }
 
-.footer .input-box {
+.footer-subscribe-box .input-box {
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
     padding: 8px 4px 8px 16px;
+    display: inline-flex;
 }
 
 .footer .input-box::placeholder {
@@ -673,9 +672,15 @@ textarea {
 }
 
 .subscribe-button {
+    display: flex;
     width: 165px;
     height: 40px;
-    display: flex;
     gap: 16px;
     padding: 8px 24px 8px 24px;
+    margin-top: 0;
+}
+
+.subscribe-button .icon {
+    fill: #fff;
+    align-self: center;
 }
