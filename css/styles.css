@@ -561,9 +561,9 @@ textarea {
 }
 
 .form-input {
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    width: 100%;
     border-radius: 4px;
     padding-left: 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -638,12 +638,13 @@ textarea {
 }
 
 .privacy-container .form-input[type="checkbox"]:checked + .form-label .privacy-icon-box {
-    fill: #404bbf;
+    background-color: #404bbf;
+    fill: #F4F4FD;
     border: none;
 }
 
 .privacy-container .form-input[type="checkbox"]:checked + .form-label .privacy-icon-box .icon{
-    fill: #fff;
+    fill: #f4f4fd;
 }
 
 .privacy-icon-box .icon{
@@ -677,15 +678,16 @@ textarea {
     margin-right: 80px;
 }
 
-.footer-subscribe-box .input-box {
+.subscribe-form .input-box {
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
-    padding: 8px 4px 8px 16px;
+    height: 40px;
+    padding-left: 16px;
     display: inline-flex;
 }
 
-.footer .input-box::placeholder {
+.subscribe-form .input-box::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 2;
@@ -693,7 +695,7 @@ textarea {
     color: #fff;
 }
 
-.footer-subscribe-box {
+.subscribe-form {
     display: flex;
     gap: 24px;
 }
