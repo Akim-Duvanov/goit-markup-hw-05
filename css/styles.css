@@ -534,7 +534,7 @@ textarea {
     fill: #4d5ae5;
 }
 
-.input-box:focus-within {
+.form-input:focus {
     border-color: #4d5ae5;
 }
 
@@ -608,7 +608,7 @@ textarea {
 }
 
 .privacy-container {
-    margin-top: 8px;
+    margin-bottom: 24px;
     align-items: center;
 }
 
