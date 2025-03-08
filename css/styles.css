@@ -8,6 +8,7 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 h1,
@@ -608,7 +609,6 @@ textarea {
 }
 
 .privacy-container {
-    margin: 24px 0;
     align-items: center;
 }
 
@@ -665,12 +665,11 @@ textarea {
 }
 
 .modal-form .form-button {
-    margin-top: 0px;
+    margin-top: 24px;
 }
 
 .form-textarea {
     margin-bottom: 16px;
-    height: 120px;
 }
 
 /* footer after form*/
